@@ -1,0 +1,38 @@
+.container-main{
+  overflow: hidden;
+  height: 70px;
+  margin-left: 100px;
+  margin-right: 100px;
+}
+
+.logo{
+  cursor: pointer;
+  float: left;
+  padding-bottom: 10px;
+  text-align: center;
+  height: 6%;
+  width: 11%;
+
+}
+
+.full-width{
+  width: 100%;
+}
+
+.search-input{
+  color: #DDDDDD;
+  margin: 15px auto;
+  min-width: 200px;
+  width: 100%;
+  max-width: 600px;
+  height: 50px;
+
+}
+
+.input-text{
+  color: #DDDDDD;
+  font-style: italic;
+  font-size: 20px;
+}
+
+

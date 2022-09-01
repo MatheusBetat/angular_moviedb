@@ -1,0 +1,12 @@
+<section>
+  <div class="get-movie" *ngFor="let movie of movies">
+    <div class="description">
+    {{movie.Title}}
+    {{movie.Genre}}
+    {{movie.Plot}}
+    {{movie.Type}}
+    {{movie.Year}}
+    </div>
+    <img class="get-poster" [src]="movie.Poster" alt="poster">
+  </div>
+</section>

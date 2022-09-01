@@ -1,0 +1,42 @@
+<div style="display: flex; height: 100%">
+  <mat-card class="home mat-elevation-z6" style="width: 100%; height: 15%">
+  <mat-card-title class="title">
+    Bem Vindo!
+  </mat-card-title>
+  <mat-card-subtitle class="subtitle">
+    Sistema para streaming de filmes.
+  </mat-card-subtitle>
+
+   <!-- <div id="title" class="teste" *ngIf="test">
+      <div *ngFor="let testando of test">
+        <span>{{testando.title}}</span>
+      </div>
+    </div>-->
+
+    <div class="movies" *ngIf="movie">
+      <section>
+        <button class="carousel-prev" (click)="previous()">
+          <em class="material-icons">
+            arrow_back_ios
+          </em>
+        </button>
+        <div *ngFor="let filme of movie">
+          <span> {{(filme.Title.length>10)? (filme.Title | slice: 0: 10)+'..': (filme.Title)}}
+          </span>
+          <img class="poster" [src]="filme.Poster" alt="poster" width="70%" height="90%">
+        </div>
+        <button class="carousel-next" (click)="next()">
+          <em class="material-icons">
+            arrow_forward_ios
+          </em>
+        </button>
+      </section>
+    </div>
+    <div class="movie-search">
+      <section>
+      <app-search-movie class="movie-searched" [movies]="movieSearch" routerLink="search"></app-search-movie>
+      </section>
+    </div>
+</mat-card>
+</div>
+

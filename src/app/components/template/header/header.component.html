@@ -1,0 +1,20 @@
+<section class="container-main">
+  <div>
+    <span>
+     <a>
+       <img class="logo" src="assets/img/PirataFlix%20(1).png" alt="logo" routerLink="/">
+     </a>
+   </span>
+  </div>
+
+  <div>
+    <form [formGroup]="form" class="search-input">
+      <mat-form-field class="full-width" appearance="fill">
+        <mat-label class="input-text">Buscar Filmes</mat-label>
+        <input formControlName='search' class="input" matInput placeholder="Ex. Titanic">
+      </mat-form-field>
+    </form>
+  </div>
+</section>
+
+
